@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Fascinate+Inline);
+.description_box {
+    width: 40%;
+    border-color: black;
+    border-width: medium;
+}
+body {
+    background: url(https://img14.deviantart.net/860e/i/2012/041/e/a/minimalistic_wallpaper_by_nesiory-d4paf50.jpg) no-repeat;
+    opacity: 0.8;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.description_box {
+    background-color: whitesmoke;
+    opacity: 0.9;
+}
+.poems_box {
+    background-color: whitesmoke;
+    opacity: 0.9;
+    text-decoration-color: black;
+    position: inherit;
+    width: 60%;
+}
+.poem_link {
+    color: black;
+}
+h1 {
+    font-family: 'Fascinate Inline',serif
+}
+.thumb img  {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+img {
+    opacity:.25;
+    width: 200px;
+    height: 200px;
+}
+img:hover{
+    opacity:1;
+}
+.view {
+    margin-right: 10px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+.view .mask, .view .content {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Fascinate Inline, serif;
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: Fascinate Inline, serif;
+    font-size: 20px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view-first img {
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.view-first:hover img {
+    transform: scale(1.1);
+}
+.view-first:hover .mask {
+    opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
